@@ -1,1 +1,6 @@
-{}
+{
+  "interfaceFontFamily": "",
+  "textFontFamily": "Lao UI",
+  "baseFontSize": 15,
+  "baseFontSizeAction": true
+}
