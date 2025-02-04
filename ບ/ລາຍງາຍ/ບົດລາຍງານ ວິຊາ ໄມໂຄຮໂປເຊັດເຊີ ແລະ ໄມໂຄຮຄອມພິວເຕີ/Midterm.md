@@ -28,6 +28,37 @@
 8. Cathode 7 Segment Display
 ![[Pasted image 20250203035434.png]]
 #### ການເຊື່ອມວົງຈອນ
+1. 7-Segment Display (Common Cathode) ການເຊື່ອມຕໍ່
+ໃຊ້ pins 2 - 8 ຂອງ Arduino ເພື່ອເຊື່ອມຕໍ່ກັບ pins A-G ຂອງການສະແດງ 7-segment ຕາມລໍາດັບ.
+
+ຂາ A → Arduino ຂາ 2
+ຂາ B → Arduino ຂາ 3
+ຂາ C → Arduino ຂາ 4
+ຂາ D → Arduino ຂາ 5
+ຂາ E → Arduino ຂາ 6
+ຂາ F → Arduino ຂາ 7
+ຂາ G → Arduino ຂາ 8
+Common Cathode → GND (ຖ້າ Anode ທົ່ວໄປ, ເຊື່ອມຕໍ່ກັບ 5V)
+2. ການເຊື່ອມຕໍ່ Potentiometer (ຕົວຕ້ານທານຕົວແປ)
+Potentiometer ມີ 3 ຂາ, ເຊື່ອມຕໍ່ພວກເຂົາດັ່ງຕໍ່ໄປນີ້:
+
+ຂາຊ້າຍ → GND
+ຂາກາງ → ຂາ Arduino A0 (ເພື່ອອ່ານຄ່າຄວາມຕ້ານທານ)
+ຂາຂວາ → 5V
+3. ການເຊື່ອມຕໍ່ RGB LED (Cathode ທົ່ວໄປ)
+RGB LED ມີ 4 ຂາ, ເຊື່ອມຕໍ່ກັບ Arduino ດັ່ງຕໍ່ໄປນີ້:
+
+ຂາ R (ສີແດງ) → ຂາ Arduino 10
+ຂາ G (ສີຂຽວ) → ຂາ Arduino 11
+ຂາ B (ສີຟ້າ) → ຂາ Arduino 12
+Common Cathode → GND (ຖ້າ Anode ທົ່ວໄປ, ໃຫ້ເຊື່ອມຕໍ່ 5V ແທນ)
+4. ການເຊື່ອມຕໍ່ Buzzer
+Buzzer (+) leg → Arduino pin 13
+Buzzer (-) ຂາ → GND
+1. ການເຊື່ອມຕໍ່ປຸ່ມ Button
+ຂາດຽວຂອງປຸ່ມ → Arduino pin 9
+ຂາອື່ນຂອງປຸ່ມ → GND
+ໃຊ້ຕົວຕ້ານທານ 10KΩ ເປັນຕົວດຶງລະຫວ່າງ pin 9 → 5V ເພື່ອຮັບປະກັນການເຮັດວຽກທີ່ເຫມາະສົມຂອງປຸ່ມ.
 ![[Pasted image 20250203041830.png]]
 ![[Pasted image 20250203041845.png]]
 ![[Pasted image 20250203041918.png]]

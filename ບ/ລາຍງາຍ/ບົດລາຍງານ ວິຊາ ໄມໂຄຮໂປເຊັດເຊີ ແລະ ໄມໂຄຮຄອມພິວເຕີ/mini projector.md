@@ -22,6 +22,20 @@
 4. Piezo
 ![[Pasted image 20250203010015.png]]
 #### ການເຊື່ອມວົງຈອນ
+1. LED RGB (3 ຂາສີແຍກ)
+RGB LEDs ມີສາມ pins ສັນຍານ (ສີແດງ, ສີຂຽວ, ສີຟ້າ) ແລະ pin ກາງ (GND).
+
+ຂາສີແດງ (LED ສີແດງ) →ເຊື່ອມຕໍ່ກັບ pin 9 ຂອງ Arduino ຜ່ານ resistor (220Ω).
+ຂາສີຂຽວ (LED ສີຂຽວ) → ເຊື່ອມຕໍ່ກັບ pin 10 ຂອງ Arduino ຜ່ານ resistor (220Ω).
+ໄຟ LED ສີຟ້າ → ເຊື່ອມຕໍ່ກັບ pin 11 ຂອງ Arduino ຜ່ານຕົວຕ້ານທານ (220Ω).
+ຂາ GND (ຂາກາງຂອງ RGB LED) →ເຊື່ອມຕໍ່ GND ຂອງ Arduino.
+1. Buzzer (ເຄື່ອງສ້າງສຽງ)
+Buzzer positive terminal (+) → ເຊື່ອມຕໍ່ຫາ pin 3 ຂອງ Arduino.
+Buzzer negative terminal (-) → ເຊື່ອມຕໍ່ຫາ GND ຂອງ Arduino.
+3. ປຸ່ມກົດ (Push Switch)
+ຂາດຽວຂອງປຸ່ມກົດ → ເຊື່ອມຕໍ່ກັບ pin 2 ຂອງ Arduino.
+ຂາອື່ນໆຂອງປຸ່ມກົດ→ເຊື່ອມຕໍ່ GND ຜ່ານຕົວຕ້ານທານດຶງລົງ (10kΩ).
+ຂາດຽວກັນກັບ Pull-down resistor → ເຊື່ອມຕໍ່ກັບ 5V ເພື່ອໃຫ້ແຮງດັນໃນເວລາທີ່ກົດປຸ່ມ.
 ![[Pasted image 20250203013059.png]]
 ![[Pasted image 20250203013114.png]]
 #### code
