@@ -105,7 +105,7 @@ void loop() {
   int lightLevel = map(potValue, 0, 1023, 0, 100); // ແປງຄ່າເປັນຊ່ວງ 0-100
   showNumber(lightLevel); // ສະແດງລະດັບແສງທີ່ 7-segment display
   
-  // แสดงค่า lightLevel ใน Serial Monitor
+  // ສະແດງຄ່າ lightLevel ໃນ Serial Monitor
   Serial.print("Light Level: ");
   Serial.println(lightLevel);
   
